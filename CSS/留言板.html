@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(conversation-picture/fj.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .container{
+            width: 800px;
+            height: 600px;
+            border: 1px solid;
+            margin: 2% 20% 0px 20%;
+            background-image: url(conversation-picture/bj.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: scroll;
+        }
+
+        .ct-image-l{
+            background-image: url(conversation-picture/伦敦眼.svg);
+            float: left;
+        }
+
+        .ct-image{
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .ct-content{
+
+            font-family: Krungthep;
+            padding: 10px;
+            margin: 20px;
+        }
+        .ct-content-l{
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .ct-content-r{
+            background-color: greenyellow;
+            border-radius: 5px;
+        }
+
+        .ct-image-r{
+            background-image: url(conversation-picture/富士山.svg);
+            float: right;
+        }
+
+        .conversation{
+            padding: 20px;
+        }
+        .ct-content-r:hover{
+            border-radius: 20px;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 4px gray;
+        }
+        .ct-content-l:hover{
+            border-radius: 20px;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 4px gray;
+        }
+
+        .ct-msg-l{
+            float: left;
+            max-width: 300px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 20px 40px 0px 40px;
+
+        }
+
+
+        .ct-msg-r{
+            max-width: 300px;
+            overflow: hidden;
+            float: right;
+            display: inline-block;
+            margin: 20px 40px 0px 40px;
+        }
+
+        .ct-date-l{
+            padding: 10px;
+            text-align: left;
+        }
+        .ct-date-r{
+            padding: 10px;
+            text-align: right;
+        }
+
+        @keyframes move {
+            0%{
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .container1{
+            width: 200px;
+            height: 200px;
+            background-image: url(conversation-picture/dm.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            z-index: 3;
+        }
+        .di:hover .container1{
+            animation: move 4s linear infinite;
+        }
+
+        .stop{
+            background-image: url(暂停.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            position: fixed;
+        }
+
+        .di{
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        .conversation:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="di" style="position: fixed;">
+    <div class="container1"></div>
+    <div class="stop"></div>
+</div>
+        <div class="container">
+            <div class="conversation">
+                <div class="ct-image-l ct-image"></div>
+                <div class="ct-msg-l">
+                    <div class="ct-content ct-content-l">今天吃了饭了吗？</div>
+                    <div class="ct-date-l">2018-07-30 20:28</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+            <div class="conversation">
+                <div class="ct-image-r ct-image"></div>
+                <div class="ct-msg-r">
+                    <div class="ct-content ct-content-r">嗯，我吃了但味道并不怎么样</div>
+                    <div class="ct-date-r">2018-07-30 20:30</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+            <div class="conversation">
+                <div class="ct-image-l ct-image"></div>
+                <div class="ct-msg-l">
+                    <div class="ct-content ct-content-l">那你还想吃上些什么呢</div>
+                    <div class="ct-date-l">2018-07-30 20:31</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+            <div class="conversation">
+                <div class="ct-image-r ct-image"></div>
+                <div class="ct-msg-r">
+                    <div class="ct-content ct-content-r">我还想吃的东西有点多呢～ eg.干锅千页豆腐、水煮肉片、尖椒土豆丝、干炸蘑菇、金酱肉丝、炸酱面、北京烤鸭、天津小笼包....一般这些也就是我夜宵塞牙而已</div>
+                    <div class="ct-date-r">2018-07-30 20:34</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+            <div class="conversation">
+                <div class="ct-image-l ct-image"></div>
+                <div class="ct-msg-l">
+                    <div class="ct-content ct-content-l">那你可是很胖胖的呢，那你的餐桌肯定很丰富了</div>
+                    <div class="ct-date-l">2018-07-30 20:36</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+
+            <div class="conversation">
+                <div class="ct-image-r ct-image"></div>
+                <div class="ct-msg-r">
+                    <div class="ct-content ct-content-r" style="background-image: url(conversation-picture/sw.jpg);width: 400px;height:300px;background-size: 100% 100%;background-repeat: no-repeat;"></div>
+                    <div class="ct-date-r">2018-07-30 20:37</div>
+                </div>
+                <!--<br clear="both">-->
+            </div>
+        </div>
+</body>
+</html>

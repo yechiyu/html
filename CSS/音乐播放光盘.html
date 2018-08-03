@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @keyframes move {
+            0%{
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .container{
+            width: 200px;
+            height: 200px;
+            background-image: url(conversation-picture/dm.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            /*z-index: 3;*/
+        }
+        .di:hover .container{
+            animation: move 4s linear infinite;
+        }
+
+        .stop{
+            background-image: url(暂停.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            /*z-index: 2;*/
+            position: fixed;
+            /*float: left;*/
+        }
+
+        .di{
+            width: 200px;
+            height: 200px;
+            /*z-index: 1;*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="di">
+    <div class="container"></div>
+    <div class="stop"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        @keyframes move {
+            0%{
+
+            }
+
+            25%{
+                transform: translate(0px,50px);
+                background-color: crimson;
+            }
+
+            50%{
+                transform: translate(50px,50px);
+                background-color: aquamarine;
+            }
+
+            75%{
+                transform: translate(50px,0px);
+                background-color: coral;
+            }
+
+            100%{
+                transform: translate(0px,0px);
+                border-radius: 50%;
+            }
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /*transition: all 1s linear;*/
+        }
+
+        .container:hover{
+            animation: move 4s linear infinite;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

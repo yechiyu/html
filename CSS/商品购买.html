@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .contmain{
+            border-radius: 10px 10px 0px 0px;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px gray;
+            position: relative;
+            margin: 20px;
+        }
+        .contmain:hover .skt{
+            bottom: 0px;
+        }
+        .sub{
+            width: 300px;
+            height: 150px;
+            background-image: url(fss.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .skt {
+            width: 300px;
+            height: 50px;
+            background-image: url(购买.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            background-color: coral;
+            position: absolute;
+            bottom: -50px;
+            transition: all 0.2s ease-in-out;
+        }
+        .rng{
+            background-image: url(美元.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 65%;
+            width: 300px;
+            height: 30px;
+            text-align: right;
+            line-height: 30px;
+        }
+        article{
+            width: 300px;
+            height: 150px;
+            overflow: scroll;
+            font-family: "Apple Chancery";
+        }
+        article header{
+            text-align: center;
+            height: 20px;
+            font-size: 15px;
+        }
+        .omg{
+            padding-left: 10px;
+            width: 100%;
+            height: 110px;
+            overflow: scroll;
+        }
+
+
+        .sale{
+            width: 100%;
+            height: 50px;
+            background-color: crimson;
+            transform: rotate(45deg);
+
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 500;
+
+            position: absolute;
+            right: -100px;
+            top: 20px;
+            opacity: .9;
+            box-shadow: 0px 0px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contmain">
+        <div class="sale">Sale</div>
+        <div class="sub"></div>
+        <article>
+            <header><h4>富士山</h4></header>
+            <div class="omg">
+                <div class="goods-instruction">富士山（日文：ふじさん，英文：Mount Fuji）是日本国内最高峰，日本重要国家象征之一。横跨静冈县和山梨县的活火山，接近太平洋岸，东京西南方约80公里。</div>
+                <div class="goods-instruction">富士山被日本人民誉为“圣岳”，是日本民族的象征。作为日本的国家象征之一，在全球享有盛誉。它也经常被称作“芙蓉峰”或“富岳”以及“不二的高岭”。自古以来，这座山的名字就经常在日本的传统诗歌“和歌”中出现。日本诗人曾用“玉扇倒悬东海天”、“富士白雪映朝阳”等诗句赞美它。</div>
+                <div class="goods-instruction">富士山是世界上最大的活火山之一。目前处于休眠状态，但地质学家仍然把它列入活火山之类。自781年有文字记载以来，共喷发了18次，最后一次喷发是在1707年，此后休眠至今。</div>
+            </div>
+        </article>
+        <div class="rng"><h3>100 billion</h3></div>
+        <div class="skt"></div>
+    </div>
+</body>
+</html>

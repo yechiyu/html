@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @keyframes switch {
+            0%,8%{
+                margin-left: 0px;
+            }
+            10%,18%{
+                margin-left: -900px;
+            }
+
+            20%,28%{
+                margin-left: -1800px;
+            }
+
+            30%,38%{
+                margin-left: -2700px;
+            }
+
+            40%,48%{
+                margin-left: -3600px;
+            }
+            50%,58%{
+                margin-left: -4500px;
+            }
+            60%,68%{
+                margin-left: -3600px;
+            }
+
+            70%,78%{
+                margin-left: -2700px;
+            }
+
+            80%,88%{
+                margin-left: -1800px;
+            }
+
+            90%,98%{
+                margin-left: -900px;
+            }
+            100%{
+                margin-left: 0px;
+            }
+        }
+        
+        #container{
+            width: 1000px;
+            height: 200px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+
+        #photograph{
+            width: 5400px;
+            animation: switch 30s linear infinite;
+        }
+
+        .photo{
+            width: 800px;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+            margin: 0px 0px 0px 100px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="photograph">
+            <div class="photo" style="background-image: url(music-player/picture/turnimg1.png)"></div>
+            <div class="photo" style="background-image: url(music-player/picture/turnimg2.png)"></div>
+            <div class="photo" style="background-image: url(music-player/picture/turnimg3.png)"></div>
+            <div class="photo" style="background-image: url(music-player/picture/turnimg4.png)"></div>
+            <div class="photo" style="background-image: url(music-player/picture/turnimg5.png)"></div>
+            <div class="photo" style="background-image: url(music-player/picture/turnimg6.png)"></div>
+        </div>
+    </div>
+</body>
+</html>

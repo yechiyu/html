@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .contain{
+            width: 600px;
+            height: 500px;
+            border: 1px solid;
+
+            display: flex;
+            /*flex-flow: row-reverse wrap;    !*设置排列方向  是否换行*!*/
+            /*justify-content: space-around;*/
+            justify-content: space-between;
+            flex-flow: column;
+        }
+
+        .d{
+            width: 100%;
+        }
+
+        #d1{
+            height: 40px;
+            background-color: coral;
+        }
+
+        #d2{
+            height: 40px;
+            background-color: crimson;
+        }
+
+        #d3{
+            flex-grow: 1;   /*分配剩余空间*/
+            background-color: skyblue;
+        }
+
+        #d4{
+            height: 30px;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="d1" class="d"></div>
+    <div class="d2" class="d"></div>
+    <div class="d3" class="d"></div>
+    <div class="d4" class="d"></div>
+</div>
+</body>
+</html>

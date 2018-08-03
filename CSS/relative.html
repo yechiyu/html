@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .d{
+            width: 100px;
+            height: 100px;
+        }
+        #d1{
+            background-color: coral;
+            position: relative;
+            top: 20px;
+            left: 50px;
+            z-index: 1;
+        }
+        #d2{
+            background-color: crimson;
+            position: relative;
+            left: -10px;
+        }
+        #d3{
+            background-color: greenyellow;
+            position: relative;
+            left: 10px;
+            top: -30px;
+        }
+    </style>
+</head>
+<body>
+<div id="d1" class="d">D1</div>
+<div id="d2" class="d">D2</div>
+<div id="d3" class="d">D3</div>
+</body>
+</html>

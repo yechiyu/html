@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开哥购物</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color: gray;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .goods{
+            width: 350px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: black;
+        }
+        .goods-head *{
+            display: inline-block;
+        }
+        .goods-image{
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            float: left;
+        }
+        .goods-list{
+            height: 80px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .goods-nav:hover{
+            color: crimson;
+        }
+        .goods-nav{
+            margin-right: 4px;
+            display: inline-block;
+        }
+        .goods-instruction:hover{
+            color: crimson;
+        }
+        span{
+            font-size: 10px;
+        }
+        .goods-navigation{
+            background-color: rgba(119,129,132,0.43);
+            height: 20px;
+            font-size: 15px;
+        }
+        .goods-instruction{
+            font-size: 15px;
+        }
+        .head-img{
+            width: 18px;
+            height: 18px;
+            background-image: url(goods-picture/向右.svg);
+            background-size: contain;
+
+        }
+    </style>
+    <style>
+        .promotion{
+            height: 300px;
+            width: 100%;
+        }
+        .time{
+            background-color: rgba(242,0,24,0.74);
+            width: 200px;
+            height: 300px;
+            margin: 10px 0px 10px 10px;
+        }
+        .p-title{
+            font-size: 35px;
+            font-weight: 20px;
+            color: white;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .p-subtitle{
+            font-size: 20px;
+            font-weight: 300;
+            color: gray;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .p-image{
+            height: 50px;
+            background-image: url(goods-picture/lightning-b-闪电.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .commodity{
+            width: 200px;
+            height: 300px;
+            margin: 10px 0px 10px 0px;
+            border: 1px solid black;
+        }
+        .promotion *{
+            display: inline-block;
+        }
+        .c-image{
+            height: 150px;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="promotion">
+        <div class="time">
+            <a href="https://miaosha.jd.com/" target="_blank">
+                <div class="p-title">京东秒杀</div>
+                <div class="p-subtitle">FLASH DEALS</div>
+                <div class="p-image"></div>
+                <div class="p-time"></div>
+            </a>
+        </div>
+        <div class="commodity">
+            <div class="c-image" style="background-image: url(goods-picture/goods1.png)"></div>
+        </div>
+    </div>
+    <div class="goods">
+        <div class="goods-head">
+            <a href="http://top.jd.com" target="_blank"><h3 style="color: black;">排行榜</h3>&nbsp;<div class="head-img"></div>&nbsp;<span>专属你的购物指南</span></a>
+        </div>
+        <div class="goods-navigation">
+            <div class="goods-nav">大家电</div>
+            <div class="goods-nav">手机通讯</div>
+            <div class="goods-nav">生活电器</div>
+            <div class="goods-nav">厨房小电</div>
+            <div class="goods-nav">饮料冲调</div>
+        </div>
+        <div style="padding-top: 10px;width:350px;height:335px;overflow: scroll;margin-top: 15px;">
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac1.png);"></div>
+                <div class="goods-instruction">奥克斯（AUX）正1.5匹 冷暖 定速 制冷 壁挂式空调挂机(KFR-35GW/NFW+3)</div>
+            </div>
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac2.png);"></div>
+                <div class="goods-instruction">TCL 515升 双变频风冷无霜对开门双门电冰箱 智慧摆风 电脑控温 隐形触屏（典雅银）BCD-515WEPZ50</div>
+            </div>
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac3.png);"></div>
+                <div class="goods-instruction">美的（Midea）大1匹 智弧 智能 静音 光线感应 定速冷暖壁挂式空调挂机 KFR-26GW/WDAD3@</div>
+            </div>
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac4.png);"></div>
+                <div class="goods-instruction">志高（CHIGO）1.5匹 冷暖 定速 空调挂机 纯铜管（NEW-GD12F1H3）</div>
+            </div>
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac5.png);"></div>
+                <div class="goods-instruction">奥克斯（AUX）正1.5匹 变频冷暖 空调挂机(KFR-35GW/BpNFW+3)</div>
+            </div>
+            <div class="goods-list">
+                <div class="goods-image" style="background-image: url(goods-picture/ac6.png);"></div>
+                <div class="goods-instruction">美的（Midea）正1.5匹 空调挂机 冷暖 变频 超一级能效 卧室壁挂式空调 KFR-35GW/WCEN8A1</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

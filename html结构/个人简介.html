@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    <style type="text/css">
+        body{
+            background: no-repeat;
+            background-image: url(picture/dbj.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        input{
+            background: transparent;
+            border:1px solid rgba(255,255,255,0.3);
+            height:30px;
+            font-size:20px;
+        }
+        .array{
+            float: left;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: black;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:visited{
+            color: black;
+        }
+        a:active{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <table border="1px" cellpadding="20" cellspacing="5" style="background:no-repeat;background-image: url(picture/bj.png);background-size: cover;">
+        <tr>
+            <td><h2>姓名:<input size="20px" value="杨奇开" type="text"  autocomplete="off"></h2></td>
+            <td><h2>身高:<input size="20px" value="185cm" type="text" ></h2></td>
+            <td colspan="3" rowspan="4">
+                <img src="picture/tx.png" width="250px" title="这就是帅气的我" alt="服务器今天休假">
+            </td>
+        </tr>
+        <tr>
+            <td><h2>生日:<input size="20px" value="1997-01-10" type="date" ></h2></td>
+            <td><h2>出生地:<input size="16px" value="山西省晋中市" type="text" ></h2></td>
+        </tr>
+        <tr>
+            <td><h2>学历:<input size="20px" value="本科" type="text" ></h2></td>
+            <td><h2>邮箱:<input size="20px" value="942558965@qq.com" type="email" ></h2></td>
+        </tr>
+        <tr>
+            <td><h2>专业:<input size="20px" value="软件工程" type="text" ></h2></td>
+            <td><h2>性别:<label><input type="radio" name="gender" value="man" checked>男</label><label><input type="radio" name="gender" value="women">女</label></h2></td>
+        </tr>
+        <tr>
+            <td colspan="5"><br><h2>学校详细地址:<input size="60px" value="山西省太原市杏花区红沟南路36号" ></h2><br></td>
+        </tr>
+        <tr>
+            <td colspan="5"><br><h2>爱好:<input size="60px" value="吃饭睡觉不打豆豆，漫画电影不打游戏，火锅喝酒不会抽烟" type="text" ></h2><br></td>
+        </tr>
+        <tr>
+            <td colspan="5"><br><h2>专业技能:<br><label class="array"><h5>c语言<input value="c语言" type="checkbox" name="course" checked></h5></label><label class="array"><h5>c++<input type="checkbox" value="c++" name="course" checked></h5></label>
+                                <label class="array"><h5>数据库系统<input type="checkbox" value="数据库系统" name="course" checked></h5></label><label class="array"><h5>数据结构<input type="checkbox" value="数据结构" name="course" checked></h5></label>
+                                <label class="array"><h5>web网页<input type="checkbox" value="web网页" name="course" checked></h5></label><label class="array"><h5>java<input type="checkbox" value="JAVA" name="course" checked></h5></label>
+            </h2></td>
+        </tr>
+        <tr>
+            <td colspan="5"><h3><a href="http://www.lemonradio.cn/cj" target="_blank">大学成绩一览</a></h3></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,465 @@
+/* signal start */
+#signal{
+    height: 50px;
+    /*background-color: deepskyblue;*/
+    /*background-color: black;*/
+    display: flex;
+    align-items: center;
+
+}
+
+#signal-left div{
+    margin-left: 5px;
+}
+
+#signal-left{
+    height: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#signal-center{
+    width: 100px;
+    height: 50px;
+}
+
+#signal-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* signal-area start */
+
+#signal-area{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+}
+
+#signal-area div{
+    width: 4px;
+    margin-left: 2px;
+    /*background-color: white;*/
+    border-radius: 1px;
+    display: flex;
+}
+
+#signal-area div:nth-child(1){
+    height: 6px;
+}
+#signal-area div:nth-child(2){
+    height: 9px;
+}
+#signal-area div:nth-child(3){
+    height: 12px;
+}
+#signal-area div:nth-child(4){
+    height: 15px;
+}
+
+.signal-ok{
+    background-color: white;
+}
+
+.signal-lose{
+    background-color: gray;
+}
+
+/* signal-area end */
+
+/* mettary start */
+
+@keyframes full {
+    0%{
+        width: 0px;
+        background-color: crimson;
+    }
+
+    20%{
+        background-color: red;
+    }
+    80%{
+        background-color: greenyellow;
+    }
+    100%{
+        width: 32px;
+        background-color: greenyellow;
+    }
+}
+
+#mettary{
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-flow: row;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#mettary-body{
+    width: 38px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#mettary-charge{
+    height: 14px;
+    margin: 2px;
+    animation: full 8s linear infinite;
+}
+
+#mettary-head{
+    height: 5px;
+    width: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 1px 1px 0px;
+}
+
+/* mettary end */
+
+
+
+
+
+
+/* title start */
+#title{
+    height: 100px;
+    /*background-color: deepskyblue;*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#me{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+#title-left{
+    height: 100px;
+    flex: 1;
+}
+
+#three-line{
+    height: 80px;
+    width: 90px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 10px 10px 20px;
+}
+
+#three-line div{
+    background-color: white;
+    height: 5px;
+    width: 60px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 2px;
+
+}
+
+#title-center{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    color: #e6e6e6;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#title-right{
+    flex: 1;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#mcphone{
+    width: 80px;
+    height: 80px;
+    background-image: url(../../picture/microphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 20px 10px 10px;
+}
+
+
+/* title end */
+
+
+
+
+
+/* search start */
+
+#search{
+    height: 100px;
+    /*background-color: deepskyblue;*/
+}
+
+#search-bg{
+    width: 95%;
+    height: 70px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 40px;
+}
+
+#search-magnifier{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../picture/magnifier.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#search-content{
+    font-size: 30px;
+    color: #e6e6e6;
+}
+
+/* search end */
+
+
+
+/* personal-data start */
+
+#personal-data{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+#personal-data-information{
+    height: 170px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#personal-data-information-left{
+    width: 130px;
+    height: 130px;
+    margin-left: 25px;
+}
+
+#personal-data-information-center{
+    flex: 1;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#personal-data-information-center-name{
+    height: 70px;
+    max-width: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /*justify-content: flex-start;*/
+}
+
+#personal-data-information-center-name-left{
+    /*flex: 1;*/
+    height: 50px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+}
+
+#personal-data-information-center-name-right{
+    width: 60px;
+    height: 30px;
+    background-color: #cdcdcd;
+    border-radius: 15px;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+#personal-data-information-center-msg{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#personal-data-information-center-msg-left{
+    width: 50px;
+    height: 30px;
+    color: coral;
+    border: 2px solid coral;
+}
+
+#personal-data-information-center-msg-right{
+    flex: 1;
+    color: #cdcdcd;
+    margin-left: 5px;
+}
+
+
+#personal-data-information-right{
+    width: 60px;
+    height: 60px;
+    margin-right: 80px;
+    background-image: url(../../picture/envelop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#personal-data-menu{
+    height: 200px;
+}
+
+#personal-data-option{
+    flex: 1;
+}
+
+
+
+/* personal-data end */
+
+
+
+
+/* player-simple start */
+
+#player-simple{
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 0px 2px gainsboro;
+}
+
+#player-simple-cover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    position: fixed;
+    left: 30px;
+    bottom: 10px;
+}
+
+#player-simple-machine{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+#player-progressbar{
+    height: 20px;
+}
+
+
+#player-information{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#player-information-name{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+#player-information-name-title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+}
+
+#player-information-name-subtitle{
+    font-size: 22px;
+    color: #cdcdcd;
+}
+
+#player-information-music{
+    width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player-information-music div{
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes scroll {
+    0%{
+        width: 1%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+#player-scrollbar{
+    width: 100%;
+    height: 6px;
+    background-color: darkgray;
+    border-radius: 2px;
+}
+
+#player-scrollbar-cover{
+    width: 100%;
+    height: 6px;
+    background-color: deepskyblue;
+    border-radius: 2px;
+    position: relative;
+    animation: scroll 50s linear infinite;
+}
+
+#player-scrollbar-cover-circle{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+}
+/* player-simple end */
